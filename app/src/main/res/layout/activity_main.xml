@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F7F2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Plant Care Manager"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#245C36"
+        android:gravity="center"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/etPlantName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Plant name"
+        android:inputType="textCapWords"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etPlantType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Plant type (Indoor / Outdoor)"
+        android:inputType="textCapWords"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etWateringDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Watering interval in days"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Plant"
+        android:backgroundTint="#2E7D32" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Selected Plant"
+        android:backgroundTint="#B3261E" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saved Plants (tap one to select)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#245C36"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp" />
+
+    <ListView
+        android:id="@+id/listPlants"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#C9D5C8"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>
